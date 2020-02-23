@@ -340,6 +340,31 @@ module.exports = {
   ]
 }
 ```
+:::cutline 补充
+:::
+**没有提到但是同样重要的配置项**
+配置项|描述|是否必须|类型
+---|---|---|---
+lengthPerPage|每页的文章数(默认为5)|false|Number
+sitemap|网站地图|false|undefined|Object
+feed|rss|false|undefined|Object
+```js
+module.exports = {
+  themeConfig: {
+    lengthPerPage: 5,
+    sitemap: {
+      hostname: 'https://start-here.cn'
+    },
+    feed: {
+      canonical_base: 'https://start-here.cn'
+    },
+  }
+}
+```
+:::tip
+`sitemap`和`feed`都对网站的SEO有利，只需要提供一个hostname即可，关于它们的更多配置参考[@ vuepress / plugin-blog](https://vuepress-plugin-blog.ulivz.com/guide/getting-started.html#sitemap)
+:::
+
 ## 附
 ### 主题支持的icon
 
@@ -349,4 +374,3 @@ module.exports = {
 如果需要增加图标，只需要去[iconfont](https://www.iconfont.cn/home/index)添加图标并引入你的链接。
 如果需要覆盖templates下的dev.html和ssr.html,请加上这个主题icon链接 //at.alicdn.com/t/font_1625681_l6soj9fb0gg.css， 当然你也可以替换全部
 :::
-

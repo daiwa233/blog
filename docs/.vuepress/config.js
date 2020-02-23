@@ -66,7 +66,8 @@ module.exports = {
       avatar: 'retro'
     },
     footer: [
-      {text: '2018-2020 By Dva',icon:'iconfont icon-copyright'}
+      {text: '2018-2020 By Dva',icon:'iconfont icon-copyright'},
+      {text: '陕ICP备19015133号-1',url:'http://www.beian.miit.gov.cn/',target:'_blank'},
     ],
     friendlinks: require('./friendlinks'),
     sitemap: {
@@ -92,12 +93,14 @@ module.exports = {
       '@vuepress/pwa',
       {
         serviceWorker: true,
+        popupComponent: 'SWUpdatePopup',
         updatePopup: {
           message: "发现新内容可用",
           buttonText: "刷新"
         }
       }
-    ]
+    ],
+    '@vuepress/nprogress'
     
   ]
 
