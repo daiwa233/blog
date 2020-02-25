@@ -3,7 +3,8 @@ title: vuepres-theme-dva文档
 date: 2020-02-16
 sticky: true !important
 author: dva
-category: 'vuepress-theme-dva文档'
+tags: ['vuepress']
+category: ['vuepress']
 ---
 :::tip 前言
 我终于把文档肝出来了
