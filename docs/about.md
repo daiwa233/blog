@@ -28,8 +28,6 @@ layout: About
 
 - 3. 学习react
 
-- 4. 每周两篇原创技术文章
-
 :::tip 推荐阅读
 推荐前端er阅读我摘抄自翻译国外大佬博客的[学习目标](http://note.youdao.com/noteshare?id=340630caae1de9085dac7383bd4577d7)
 :::
